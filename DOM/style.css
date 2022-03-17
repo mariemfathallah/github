@@ -1,0 +1,39 @@
+body{
+    background-color: burlywood;
+}
+.zoom {
+    width: 320px;
+    height: 240px;
+    }
+    img {
+    width: 80%;
+    height: 200px;
+ margin-left: 150px;
+  
+    }
+    .image img {
+    /* La transition s'applique à la fois sur la largeur et la hauteur, avec une durée d'une seconde. */
+    -webkit-transition: all 1s ease; /* Safari et Chrome */
+    -moz-transition: all 1s ease; /* Firefox */
+    -ms-transition: all 1s ease; /* Internet Explorer 9 */
+    -o-transition: all 1s ease; /* Opera */
+    transition: all 1s ease;
+    }
+    .image:hover img {
+    /* L'image est grossie de 25% */
+    -webkit-transform:scale(1.25); /* Safari et Chrome */
+    -moz-transform:scale(1.25); /* Firefox */
+    -ms-transform:scale(1.25); /* Internet Explorer 9 */
+    -o-transform:scale(1.25); /* Opera */
+    transform:scale(1.25);
+    }
+    .error{
+        color:red;
+        padding: 10px;
+        border: 1px dotted #fff;
+    }
+    .success{
+        color: green;
+        padding: 10px;
+        border: 1px dotted green;
+    }
